@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>position</title>
+  <style media="screen">
+    body {
+      height: 100%;
+    }
+    #tUp{
+      background-color: #90EE90;
+      border: 6px solid black;
+      text-align: center;
+    }
+    #tDown{
+      background-color: #DC143C;
+      border: 6px solid black;
+      text-align: center;
+    }
+    #tWiggle{
+      background-color: #20B2AA;
+      border: 6px solid black;
+      text-align: center;
+    }
+    #tOops{
+      background-color: #FFD700;
+      border: 6px solid black;
+      text-align: center;
+    }
+    #tUp:hover{
+      background-color: #ffffff
+    }
+    #tDown:hover{
+      background-color: #ffffff
+    }
+    #tOops:hover{
+      background-color: #ffffff
+    }
+    #tWiggle:hover{
+      background-color: #ffffff
+    }
+    #tUp{
+      font-size: 50px;
+    }
+    #tDown{
+      font-size: 50px;
+    }
+    #tWiggle{
+      font-size: 50px;
+    }
+    #tOops{
+      font-size: 50px;
+    }
+    .thumdsbox {
+      width: 50%;
+      height: 50%;
+    }
+
+    .pTop {
+      position: relarive;
+      top: 0px;
+    }
+
+    .pBot {
+      position: relarive;
+      bottom: 0px;
+    }
+
+    .pLeft {
+      position: relarive;
+      left: 0px;
+    }
+
+    .pRight {
+      position: relarive;
+      right: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="tUp" class="thumdsbox pTop pLeft">
+    up
+  </div>
+  <div id="tWiggle"class="thumdsbox pTop pRight">
+    wiggle
+  </div>
+  <div id="tDown"class="thumdsbox pBot pLeft">
+    down
+  </div>
+  <div id="tOops"class="thumdsbox pBot pRight">
+    oops
+  </div>
+</body>
+</html>

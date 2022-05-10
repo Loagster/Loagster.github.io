@@ -1,0 +1,53 @@
+<htm1>
+
+<head>
+  <title>java</title>
+  <script type="text/javascript">
+    // declares a variable
+    var x = 3;
+    // declares a function
+    function generateFunny() {
+      var funnyPhrases = [
+        "69 nice",
+        "deez nuts",
+        "w human",
+        "my name is jeff",
+        "fortnut",
+        "you smell like nickels"
+      ]
+      var funnywords = document.getElementById('funnyWords');
+      funnywords.innerHTML = funnyPhrases[rollDie() - 1 ];
+    }
+    // return
+    function rollDie() {
+      var newNumber = Math.random()
+      newNumber = newNumber * 6
+      newNumber = Math.ceil(newNumber)
+      return newNumber
+    }
+    // Put a random number in the dieBox
+    function getDieRoll() {
+      var dieBox = document.getElementById('dieBox');
+      dieBox.innerHTML = rollDie();
+    }
+
+    //test using lists
+    var itemList = ["Diamond Sword", "Diamond pickaxe", "Golden Apple", "magenta wool"];
+    console.log(itemList[0]);
+    console.log(itemList[1]);
+    console.log(itemList[2]);
+    console.log(itemList[3]);
+    console.log(itemList[x]);
+  </script>
+</head>
+
+<body>
+  <h1>welcome</h1>
+  <h2 id="funnyWords" onclick="generateFunny()">funny words here </h2>
+  <div id="dieBox" onclick="getDieRoll()">
+    click to roll the die
+  </div>
+</body>
+
+
+</html>
